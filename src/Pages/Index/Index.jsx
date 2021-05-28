@@ -1,5 +1,5 @@
 import ilustracao from '../../Assets/ilustracao.svg'
-import logo from '../../Assets/Logo.svg'
+import logo from '../../Assets/logo.svg'
 import './Index.css'
 
 export default function index() {
@@ -18,16 +18,16 @@ export default function index() {
             <div class="form">
               <div className="cadastro">
                 <span>Cadastro</span>
-                <span>Login</span>
+                {/*<span>Login</span>*/}
               </div>
               <form action="/login" method="POST">
                 <div class="row">
                   <div class="col formulario">
-                    <small id="passwordHelpBlock" class="form-text text-muted descricao">Nome</small>
+                    <small id="passwordHelpBlock" class="descricao">Nome</small>
                     <input type="text" name="nome" class="form-control input-nome" placeholder="Nome"></input>
                   </div>
                   <div class="col">
-                    <small id="passwordHelpBlock" class="form-text text-muted">Sobrenome</small>
+                    <small id="passwordHelpBlock" class="descricao">Sobrenome</small>
                     <input type="text" name="sobrenome" class="form-control input-sobrenome" placeholder="Sobrenome"></input>
                   </div>
                   <small id="passwordHelpBlock" class="form-text text-muted descricao">Endereço de e-mail</small>
@@ -39,8 +39,10 @@ export default function index() {
                   <div className="buttons">
                     <button type="submit" class="btn btn-warning btn-create">Criar nova conta</button>
                     <button type="text" class="btn btn-warning btn-account" text-decoration='none'><a href="/login">Já tenho conta</a>
-                    </button>
-                    <img src={logo} alt="logo do site" class="logo"></img>
+                    </button>                    
+                  </div>
+                  <div>
+                  <img src={logo} alt="logo do site" class="logo"></img>
                   </div>
 
                 </div>

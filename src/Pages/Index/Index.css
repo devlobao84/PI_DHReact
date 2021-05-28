@@ -1,5 +1,5 @@
 .body {
-  display: flex;
+  display: block;
   background-color: #F2F2F2;  
   min-height: 100vh;
   align-items: center;
@@ -16,47 +16,64 @@ h1, p {
   position: fixed; 
   bottom: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .cadastro {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: auto 10%;
 }
 
 .cadastro > span {
+  display:flex;
+  justify-content: center;
   font-size: 1.5rem;
   margin: 20px 20px;
+  
 }
 
 .div-form {
   background-color: rgb(255, 255, 255);
   border-radius: 3%;
-  border: 1px solid rgb(172, 172, 172);
+  border: 1px solid rgb(172, 172, 172);  
 }
 
 .input-nome {  
-  width: 100% !important;  
+  width: 90% !important;  
   text-align: left;
 }
 
 .input-sobrenome {
-  width: 100% !important;  
+  width: 90% !important;  
   text-align: left;
 
 }
 
-.descricao {
+.small-nome {
   width: 100% !important;
   margin-top: 50px; 
   padding-right: 185px;
   text-align: left;
 }
 
-.input-maior {
+
+.small-sobrenome {
   width: 100% !important;
+  margin-top: 50px;
+  padding-right: 150px;
+  text-align: left;
+}
+
+
+.input-maior {
+  width: 80% !important;
   padding-top: 20px;
   text-align: left;
+}
+
+.descricao {
+  font-size: 18px;
 
 }
 
@@ -65,14 +82,16 @@ input:nth-child(4), input:nth-child(6), input:nth-child(8)  {
   width: 100%;
 }
 
-.form {
-  padding: 5%;
-}
+
 
 .logo {
-  width: 100px;
-  max-width: 100%;
-  margin: 2% 35%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 125px 0 0;  
+  width: 290px !important;
+  height: 120px !important;
+  
+  
 }
 
 .btn-create {
@@ -88,3 +107,5 @@ button > a {
   color: black;
   text-decoration: none;
 }
+
+
