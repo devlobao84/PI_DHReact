@@ -14,7 +14,7 @@ export default function index() {
          </p>
             <img class="ilustra" src={ilustracao} alt="Illustração"></img>
           </div>
-          <div class="col-5 mw-100 div-form box-form">
+          <div class="col-5 mw-100 div-form">
             <div class="form">
               <div className="cadastro">
                 <span>Cadastro</span>
@@ -22,16 +22,16 @@ export default function index() {
               </div>
               <form action="/login" method="POST">
                 <div class="row">
-                  <div class="col">
+                  <div class="col formulario">
                     <small id="passwordHelpBlock" class="form-text text-muted descricao">Nome</small>
-                    <input type="text" name="nome" class="form-control" placeholder="Nome"></input>
+                    <input type="text" name="nome" class="form-control input-nome" placeholder="Nome"></input>
                   </div>
                   <div class="col">
                     <small id="passwordHelpBlock" class="form-text text-muted">Sobrenome</small>
-                    <input type="text" name="sobrenome" class="form-control input-menor" placeholder="Sobrenome"></input>
+                    <input type="text" name="sobrenome" class="form-control input-sobrenome" placeholder="Sobrenome"></input>
                   </div>
                   <small id="passwordHelpBlock" class="form-text text-muted descricao">Endereço de e-mail</small>
-                  <input type="email" name="email" id="inputPassword5" class="form-control" placeholder="E-mail" aria-describedby="passwordHelpBlock"></input>
+                  <input type="email" name="email" id="inputPassword5" class="form-control input-maior" placeholder="E-mail" aria-describedby="passwordHelpBlock"></input>
                   <small id="passwordHelpBlock" class="form-text text-muted descricao">Senha</small>
                   <input type="password" name="senha" id="inputPassword5" class="form-control input-maior" placeholder="Senha" aria-describedby="passwordHelpBlock"></input>
                   <small id="passwordHelpBlock" class="form-text text-muted descricao">Confirmar senha</small>
