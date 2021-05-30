@@ -1,5 +1,5 @@
 import img from '../../Assets/ilustracao.svg'
-import logo from '../../Assets/Logo.svg'
+import logo from '../../Assets/logo.svg'
 import './Login.css'
 
 
